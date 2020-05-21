@@ -16,4 +16,5 @@ META.yml
 META.json
 MYMETA.*
 *.tar.gz
+.vscode
 Acme-Benchmarks-*
