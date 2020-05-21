@@ -17,6 +17,8 @@ Acme::Benchmarks - Perl5 Benchmarks
 
 =head1 SYNOPSIS
 
+Please read L<perlperf> first.
+
 Prepare for benchmark to install dependent modules.
 
     cpanm -L extlib --installdeps .
