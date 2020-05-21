@@ -17,17 +17,21 @@ Acme::Benchmarks - Perl5 Benchmarks
 
 =head1 SYNOPSIS
 
+Prepare for benchmark to install dependent modules.
+
+    cpanm -L extlib --installdeps .
+
 Kick a test to run all benchmarks.
 
-    perl -Ilib t/run.t
+    perl -Ilib -Iextlib/lib/perl5 t/run.t
 
 Use each module to run each brnchmarks.
 
-    perl -MAcme::Benchmarks::Core::String::Concat -e 1
+    perl -Ilib -Iextlib/lib/perl5 -MAcme::Benchmarks::Core::String::Concat -e 1
 
 If you would like to confirm that routines return same values, L<Benchmark::Confirm> is helpfull.
 
-    perl -MBenchmark::Confirm -MAcme::Benchmarks::Core::String::Concat -e 1
+    perl -Ilib -Iextlib/lib/perl5 -MBenchmark::Confirm -MAcme::Benchmarks::Core::String::Concat -e 1
     ... Benchmark...
     ok 1
     ok 2
