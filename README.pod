@@ -21,7 +21,7 @@ Kick a test to run all benchmarks.
 
     perl -Ilib -Iextlib/lib/perl5 t/run.t
 
-Use each module to run each brnchmarks.
+Use each module to run each brnchmark.
 
     perl -Ilib -Iextlib/lib/perl5 -MAcme::Benchmarks::Core::String::Concat -e 1
 
