@@ -6,6 +6,11 @@ requires 'warnings';
 requires 'Benchmarks';
 requires 'Test::AllModules';
 
+# Acme::Benchmarks::Module::Constants
+requires 'constant';
+requires 'Readonly';
+requires 'Data::Lock';
+
 on 'configure' => sub {
     requires 'Module::Build' , '0.40';
     requires 'Module::Build::Pluggable';
