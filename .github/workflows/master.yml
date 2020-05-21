@@ -35,5 +35,6 @@ jobs:
         if: matrix.perl-version != '5.8'
       - name: Run xt tests
         run: prove -Ilib xt
+        if: matrix.perl-version == 'latest'
       - name: Run benchmarks
         run: perl -Ilib t/run.t

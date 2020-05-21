@@ -1,4 +1,4 @@
-name: mac_latest
+name: mac
 
 on:
   push:
