@@ -68,6 +68,8 @@ Dai Okabayashi E<lt>bayashi@cpan.orgE<gt>
 
 =head1 SEE ALSO
 
+L<perlperf>
+
 L<Benchmarks>
 
 L<Benchmark::Confirm>
