@@ -35,7 +35,7 @@ If you would like to confirm that routines return same values, L<Benchmark::Conf
 
 =head1 DESCRIPTION
 
-Perl Benchmarks haddle in here.
+Perl Benchmarks huddle in here.
 
 See github workflow L<https://github.com/bayashi/Acme-Benchmarks/actions> for benchmark results.
 
