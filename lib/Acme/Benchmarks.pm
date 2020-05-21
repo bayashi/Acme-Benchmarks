@@ -38,6 +38,8 @@ If you would like to confirm that routines return same values, L<Benchmark::Conf
     ok 1
     ok 2
 
+If you would like to know the details of routine more deeply, you should use L<B::Deparse>.
+
 
 =head1 DESCRIPTION
 
@@ -71,6 +73,8 @@ L<Benchmarks>
 L<Benchmark::Confirm>
 
 L<Test::AllModules>
+
+L<B::Deparse>
 
 
 =head1 LICENSE
