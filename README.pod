@@ -1,7 +1,8 @@
-=encoding utf8
+=encoding UTF-8
 
+=head1 NAME
 
-This is Perl module B<Acme::Benchmarks>.
+Acme::Benchmarks - Perl5 Benchmarks
 
 =begin html
 
@@ -10,11 +11,33 @@ This is Perl module B<Acme::Benchmarks>.
 =end html
 
 
-=head1 DOCUMENTATION
+=head1 SYNOPSIS
 
-Acme::Benchmarks documentation is available as in POD. So you can do:
+Prepare for benchmark to install dependent modules.
 
-    % perldoc Acme::Benchmarks
+    cpanm -L extlib --installdeps .
+
+Kick a test to run all benchmarks.
+
+    perl -Ilib -Iextlib/lib/perl5 t/run.t
+
+Use each module to run each brnchmarks.
+
+    perl -Ilib -Iextlib/lib/perl5 -MAcme::Benchmarks::Core::String::Concat -e 1
+
+If you would like to confirm that routines return same values, L<Benchmark::Confirm> is helpfull.
+
+    perl -Ilib -Iextlib/lib/perl5 -MBenchmark::Confirm -MAcme::Benchmarks::Core::String::Concat -e 1
+    ... Benchmark...
+    ok 1
+    ok 2
+
+
+=head1 DESCRIPTION
+
+Perl Benchmarks haddle in here.
+
+See github workflow L<https://github.com/bayashi/Acme-Benchmarks/actions> for benchmark results.
 
 
 =head1 REPOSITORY
