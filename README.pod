@@ -1,0 +1,33 @@
+=encoding utf8
+
+
+This is Perl module B<Acme::Benchmarks>.
+
+=begin html
+
+<a href="https://github.com/bayashi/Acme-Benchmarks/blob/master/README.pod"><img src="https://img.shields.io/badge/Version-0.01-green?style=flat"></a> <a href="https://github.com/bayashi/Acme-Benchmarks/blob/master/LICENSE"><img src="https://img.shields.io/badge/LICENSE-Artistic%202.0-GREEN.png"></a> <a href="https://github.com/bayashi/Acme-Benchmarks/actions"><img src="https://github.com/bayashi/Acme-Benchmarks/workflows/master/badge.svg"/></a>
+
+=end html
+
+
+=head1 DOCUMENTATION
+
+Acme::Benchmarks documentation is available as in POD. So you can do:
+
+    % perldoc Acme::Benchmarks
+
+
+=head1 REPOSITORY
+
+Acme::Benchmarks is hosted on github
+L<http://github.com/bayashi/Acme-Benchmarks>
+
+
+=head1 LICENSE
+
+C<Acme::Benchmarks> is free software; you can redistribute it and/or modify it under the terms of the Artistic License 2.0. (Note that, unlike the Artistic License 1.0, version 2.0 is GPL compatible by itself, hence there is no benefit to having an Artistic 2.0 / GPL disjunction.) See the file LICENSE for details.
+
+
+=head1 AUTHOR
+
+Dai Okabayashi E<lt>bayashi@cpan.orgE<gt>
