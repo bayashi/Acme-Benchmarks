@@ -1,6 +1,5 @@
 # http://bit.ly/cpanfile
 # http://bit.ly/cpanfile_version_formats
-requires 'perl', '5.008005';
 requires 'strict';
 requires 'warnings';
 requires 'Benchmarks';
@@ -20,7 +19,6 @@ on 'configure' => sub {
 on 'develop' => sub {
     requires 'Software::License';
     requires 'Test::Perl::Critic';
-    requires 'Test::Pod::Coverage';
     requires 'Test::Pod';
     requires 'Test::NoTabs';
     requires 'Test::Vars';
