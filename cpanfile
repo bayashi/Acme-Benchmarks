@@ -10,6 +10,12 @@ requires 'constant';
 requires 'Readonly';
 requires 'Data::Lock';
 
+# Acme::Benchmarks::Module::WebRouter
+requires 'HTTP::Router';
+requires 'Router::Simple';
+requires 'Router::Boom';
+requires 'Router::R3';
+
 on 'configure' => sub {
     requires 'Module::Build' , '0.40';
     requires 'Module::Build::Pluggable';
