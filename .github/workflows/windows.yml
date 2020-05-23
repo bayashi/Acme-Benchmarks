@@ -3,10 +3,15 @@ name: windows
 on:
   push:
     branches:
-      - master
-      - '**windows**'
+      - '*'
     tags-ignore:
       - '*'
+  pull_request:
+    branches:
+      - '!bump-version'
+      - '!bump_version'
+      - '!doc?'
+      - '!pod'
 
 jobs:
   perl:
