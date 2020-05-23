@@ -17,4 +17,5 @@ META.json
 MYMETA.*
 *.tar.gz
 .vscode
+.xslate_cache
 Acme-Benchmarks-*
