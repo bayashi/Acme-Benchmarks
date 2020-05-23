@@ -5,7 +5,10 @@ use Test::AllModules;
 my %win_option = ();
 if ($^O eq 'MSWin32') {
     %win_option = (
-        'lib' => ['lib', @INC],
+        lib => ['lib', @INC],
+        except => [
+            'Acme::Benchmarks::Module::WebRouter',
+        ],
     );
 }
 
