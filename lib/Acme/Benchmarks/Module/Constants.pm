@@ -41,3 +41,7 @@ Acme::Benchmarks::Module::Constants - Compare the ways to use constant variables
 =head1 AUTHOR
 
 Dai Okabayashi E<lt>bayashi@cpan.orgE<gt>
+
+=head1 SEE ALSO
+
+L<https://fbis.hatenablog.com/entry/20090612/1244806476>
