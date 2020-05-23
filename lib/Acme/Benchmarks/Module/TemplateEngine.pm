@@ -9,7 +9,7 @@ use Benchmarks sub {
     use HTML::Template::Pro;
     use Template;
 
-    my @path = ("$Bin/workdir/template");
+    my @path = ("$Bin/../workdir/template", "$Bin/workdir/template");
 
     my $tx  = Text::Xslate->new(
         path      => \@path,
