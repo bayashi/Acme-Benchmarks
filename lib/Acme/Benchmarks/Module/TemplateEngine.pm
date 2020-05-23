@@ -43,20 +43,21 @@ use Benchmarks sub {
     CONFIRM: {
         my $expected = $tx->render('index.tx', \%vars);
         $expected =~ s/\n+/\n/g;
-    
-        plan tests => 3;
+
         my $out = $mt->render('index', \%vars);
         $out =~ s/\n+/\n/g;
         is $out, $expected, 'MT - Text::MicroTemplate::Extended';
-    
+
         $ht->param(\%vars);
         $out = $ht->output();
         $out =~ s/\n+/\n/g;
         is $out, $expected, 'HT - HTML::Template::Pro';
-    
+
         $out = '';
         $tt->process('index.tt', \%vars, \$out) or die $tt->error;
         is $out, $expected, 'TT - Template-Toolkit';
+
+        done_testing();
     }
 
     {
