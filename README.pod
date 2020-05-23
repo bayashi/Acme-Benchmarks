@@ -13,6 +13,8 @@ Acme::Benchmarks - Perl5 Benchmarks
 
 =head1 SYNOPSIS
 
+Please read L<perlperf> first.
+
 Prepare for benchmark to install dependent modules.
 
     cpanm -L extlib --installdeps .
@@ -31,6 +33,8 @@ If you would like to confirm that routines return same values, L<Benchmark::Conf
     ... Benchmark...
     ok 1
     ok 2
+
+If you would like to know the details of routine more deeply, you should use L<B::Deparse>.
 
 
 =head1 DESCRIPTION
