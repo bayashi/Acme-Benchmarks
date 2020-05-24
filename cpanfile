@@ -9,9 +9,3 @@ requires 'Test::AllModules';
 requires 'constant';
 requires 'Readonly';
 requires 'Data::Lock';
-
-# Acme::Benchmarks::Module::TemplateEngine
-requires 'Text::Xslate';
-requires 'Text::MicroTemplate::Extended';
-requires 'HTML::Template::Pro';
-requires 'Template';

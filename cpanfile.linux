@@ -7,6 +7,12 @@ requires 'Router::Simple';
 requires 'Router::Boom';
 requires 'Router::R3';
 
+# Acme::Benchmarks::Module::TemplateEngine
+requires 'Text::Xslate';
+requires 'Text::MicroTemplate::Extended';
+requires 'HTML::Template::Pro';
+requires 'Template';
+
 on 'configure' => sub {
     requires 'Module::Build' , '0.40';
     requires 'Module::Build::Pluggable';
