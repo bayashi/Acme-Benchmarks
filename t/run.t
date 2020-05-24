@@ -7,7 +7,8 @@ if ($^O eq 'MSWin32') {
     %win_option = (
         lib => ['lib', @INC],
         except => [
-            'Acme::Benchmarks::Module::WebRouter',
+            qr/Module::WebRouter/,
+            qr/Module::TemplateEngine/,
         ],
     );
 }
