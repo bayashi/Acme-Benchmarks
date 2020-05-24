@@ -3,7 +3,6 @@
 requires 'strict';
 requires 'warnings';
 requires 'Benchmarks';
-requires 'Test::More';
 requires 'Test::AllModules';
 
 # Acme::Benchmarks::Module::Constants

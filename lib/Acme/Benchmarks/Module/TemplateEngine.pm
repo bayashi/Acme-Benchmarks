@@ -2,7 +2,6 @@ package Acme::Benchmarks::Module::TemplateEngine;
 use strict;
 use warnings;
 use FindBin qw($Bin);
-use Test::More;
 use Benchmarks sub {
     use Text::Xslate;
     use Text::MicroTemplate::Extended;
@@ -39,26 +38,6 @@ use Benchmarks sub {
             { title => 'Compilers: Principles, Techniques, and Tools' },
          ) x 100],
     );
-
-    CONFIRM: {
-        my $expected = $tx->render('index.tx', \%vars);
-        $expected =~ s/\n+/\n/g;
-
-        my $out = $mt->render('index', \%vars);
-        $out =~ s/\n+/\n/g;
-        is $out, $expected, 'MT - Text::MicroTemplate::Extended';
-
-        $ht->param(\%vars);
-        $out = $ht->output();
-        $out =~ s/\n+/\n/g;
-        is $out, $expected, 'HT - HTML::Template::Pro';
-
-        $out = '';
-        $tt->process('index.tt', \%vars, \$out) or die $tt->error;
-        is $out, $expected, 'TT - Template-Toolkit';
-
-        done_testing();
-    }
 
     {
         Xslate => sub {
