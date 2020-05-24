@@ -28,10 +28,14 @@ jobs:
       - name: perl -V
         run: perl -V
       - name: Install dependencies
-        run: curl -sL https://git.io/cpm | perl - install -g --with-recommends --with-test --with-configure --show-build-log-on-failure
+        run: |
+            curl -sL https://git.io/cpm | perl - install -g --cpanfile=cpanfile --show-build-log-on-failure
+            curl -sL https://git.io/cpm | perl - install -g --cpanfile=cpanfile.linux --with-recommends --with-test --with-configure --show-build-log-on-failure
         if: matrix.perl-version != 'latest'
       - name: Install dependencies With develop
-        run: curl -sL https://git.io/cpm | perl - install -g --with-recommends --with-test --with-configure --with-develop --show-build-log-on-failure
+        run: |
+            curl -sL https://git.io/cpm | perl - install -g --cpanfile=cpanfile --show-build-log-on-failure
+            curl -sL https://git.io/cpm | perl - install -g --cpanfile=cpanfile.linux --with-recommends --with-test --with-configure --with-develop --show-build-log-on-failure
         if: matrix.perl-version == 'latest'
       - name: Run xt tests
         run: prove -Ilib xt
