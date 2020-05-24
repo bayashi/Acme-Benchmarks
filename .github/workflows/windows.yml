@@ -24,6 +24,5 @@ jobs:
       - name: Install dependencies
         run: |
             curl -sL https://git.io/cpm | perl - install -g --cpanfile=cpanfile --show-build-log-on-failure
-            curl -sL https://git.io/cpm | perl - install -g --cpanfile=cpanfile.windows --show-build-log-on-failure
       - name: Run benchmarks
         run: perl -Ilib t/run.t
